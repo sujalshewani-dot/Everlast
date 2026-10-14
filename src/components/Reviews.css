@@ -1,0 +1,211 @@
+.customer-reviews {
+    width: 100%;
+    padding: 30px 5% 40px;
+    background: #fff;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.reviews-header h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.reviews-header-stars {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.reviews-header p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.demo-notice {
+    margin: 0 auto 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #795b16;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    min-width: 0;
+    text-align: center;
+}
+
+.review-stars {
+    margin-bottom: 5px;
+    font-size: 23px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.review-card h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.review-text {
+    max-width: 320px;
+    min-height: 55px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.review-customer {
+    margin: 12px 0 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.review-product {
+    margin-top: 6px;
+    color: #777;
+    font-size: 11px;
+}
+
+.review-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.review-controls button {
+    width: 30px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    color: #bbb;
+    font-size: 38px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.review-controls button:hover {
+    color: #111;
+}
+
+.reviews-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 55px auto 15px;
+    color: #128879;
+    font-size: 13px;
+}
+
+.reviews-summary strong {
+    font-size: 20px;
+}
+
+.verified-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #128879;
+    color: #fff;
+    font-weight: 700;
+}
+
+.summary-stars {
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.summary-divider {
+    width: 1px;
+    height: 22px;
+    background: #128879;
+}
+
+.reviews-loading,
+.reviews-empty {
+    text-align: center;
+    color: #666;
+    padding: 30px 0;
+}
+
+.service-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 40px 20px 15px;
+    text-align: center;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.service-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icon {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.service-feature h3 {
+    margin: 0 0 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.service-feature p {
+    margin: 0;
+    font-size: 11px;
+}
+
+@media (max-width: 700px) {
+    .customer-reviews {
+        padding: 30px 18px;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .review-text {
+        min-height: auto;
+    }
+    .reviews-summary {
+        gap: 8px;
+        margin-top: 40px;
+        font-size: 11px;
+    }
+    .summary-stars {
+        font-size: 17px;
+    }
+    .summary-divider {
+        display: none;
+    }
+}

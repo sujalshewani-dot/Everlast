@@ -1,0 +1,15 @@
+export const products = [
+    { id: 1, name: "Kayali Vanilla 28", image: "/images/products/vanilla-28.png", reviews: 16, price: 2400 },
+    { id: 2, name: "Office for women (SIGNATURE)", image: "/images/products/office-for-women.png", reviews: 22, price: 2500 },
+    { id: 3, name: "Gucci Flora", image: "/images/products/gucci-flora.png", reviews: 3, price: 2400 },
+    { id: 4, name: "Giorgio Armani - My Way", image: "/images/products/my-way.png", reviews: 9, price: 2400 },
+    { id: 5, name: "Ysl - Libre", image: "/images/products/ysl-libre.png", reviews: 4, price: 2400 },
+    { id: 6, name: "Bombshell", image: "/images/products/bombshell.png", reviews: 4, price: 2400 },
+    { id: 7, name: "Aura Crystal - Versace bright crystal", image: "/images/products/aura-crystal.png", reviews: 1, price: 2400, soldOut: true },
+    { id: 8, name: "Divine Gold - Dior J'adore", image: "/images/products/divine-gold.png", reviews: 1, price: 2200 },
+    { id: 9, name: "Kayali Marshmallow", image: "/images/products/kayali-marshmallow.png", reviews: 3, price: 2200, soldOut: true },
+    { id: 10, name: "Delina", image: "/images/products/delina.png", reviews: 1, price: 2400, soldOut: true },
+    { id: 11, name: "Chanel coco mademoiselle", image: "/images/products/coco-mademoiselle.png", reviews: 0, price: 2200, soldOut: true },
+    { id: 12, name: "Garden Whisper - Gucci Bloom", image: "/images/products/garden-whisper.png", reviews: 1, price: 2200, soldOut: true },
+    { id: 13, name: "Good girl - Carolina Herrera", image: "/images/products/good-girl.png", reviews: 2, price: 2400 },
+];

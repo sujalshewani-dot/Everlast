@@ -1,0 +1,261 @@
+ .women-collection {
+     width: 100%;
+     max-width: 1800px;
+     margin: 0 auto;
+     padding: 42px 6.25% 50px;
+     box-sizing: border-box;
+     background: #fff;
+     color: #111;
+ }
+ 
+ .women-title {
+     margin: 0 0 90px;
+     font: 500 38px/1.2 Arial, Helvetica, sans-serif;
+     letter-spacing: -0.5px;
+ }
+ 
+ .women-toolbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 20px;
+     margin-bottom: 55px;
+     font: 14px Arial, Helvetica, sans-serif;
+ }
+ 
+ .women-filters,
+ .women-sort-summary {
+     display: flex;
+     align-items: center;
+     gap: 28px;
+ }
+ 
+ .women-toolbar label {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     white-space: nowrap;
+ }
+ 
+ .women-toolbar select {
+     max-width: 190px;
+     padding: 5px 20px 5px 4px;
+     border: 0;
+     outline: 0;
+     background: #fff;
+     color: #333;
+     font: inherit;
+     cursor: pointer;
+ }
+ 
+ .women-sort-summary>span {
+     color: #666;
+     white-space: nowrap;
+ }
+ 
+ .women-product-grid {
+     display: grid;
+     grid-template-columns: repeat(4, minmax(0, 1fr));
+     gap: 28px 5px;
+ }
+ 
+ .women-product-card {
+     display: block;
+     min-width: 0;
+     overflow: hidden;
+     background: #fff;
+     color: inherit;
+     text-decoration: none;
+ }
+ 
+ .women-product-image {
+     position: relative;
+     width: 100%;
+     aspect-ratio: 1 / 1;
+     overflow: hidden;
+     background: #fafafa;
+ }
+ 
+ .women-product-image img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+     object-position: center;
+     transition: transform 0.25s ease;
+ }
+ 
+ .women-product-card:hover .women-product-image img {
+     transform: scale(1.02);
+ }
+ 
+ .women-sold-out {
+     position: absolute;
+     left: 8px;
+     bottom: 8px;
+     padding: 6px 10px;
+     border-radius: 20px;
+     background: #292929;
+     color: #fff;
+     font-size: 11px;
+ }
+ 
+ .women-product-details {
+     padding: 10px 4px 4px;
+ }
+ 
+ .women-product-details h2 {
+     margin: 0 0 6px;
+     font: 400 14px/1.45 Arial, Helvetica, sans-serif;
+     overflow-wrap: anywhere;
+ }
+ 
+ .women-product-reviews {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 6px;
+     margin-bottom: 7px;
+     font: 12px Arial, Helvetica, sans-serif;
+ }
+ 
+ .women-stars {
+     color: #111;
+     font-size: 15px;
+     letter-spacing: -1px;
+     white-space: nowrap;
+ }
+ 
+ .women-product-price {
+     margin: 0;
+     color: #222;
+     font: 12px/1.5 Arial, Helvetica, sans-serif;
+ }
+ 
+ .women-no-products {
+     padding: 30px 0;
+     text-align: center;
+     font-size: 14px;
+ }
+ 
+ .women-pagination {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+     margin-top: 40px;
+ }
+ 
+ .women-pagination button {
+     min-width: 34px;
+     height: 34px;
+     padding: 0 10px;
+     border: 1px solid #ddd;
+     background: #fff;
+     color: #111;
+     cursor: pointer;
+ }
+ 
+ .women-pagination button.current-page {
+     border-color: #111;
+     background: #111;
+     color: #fff;
+ }
+ 
+ .women-pagination button:disabled {
+     opacity: 0.4;
+     cursor: not-allowed;
+ }
+ 
+ @media (max-width: 1200px) {
+     .women-collection {
+         padding-right: 4%;
+         padding-left: 4%;
+     }
+     .women-title {
+         margin-bottom: 65px;
+         font-size: 34px;
+     }
+     .women-toolbar {
+         margin-bottom: 40px;
+     }
+     .women-filters,
+     .women-sort-summary {
+         gap: 14px;
+     }
+ }
+ 
+ @media (max-width: 900px) {
+     .women-collection {
+         padding: 30px 22px 40px;
+     }
+     .women-title {
+         margin-bottom: 38px;
+         font-size: 30px;
+     }
+     .women-toolbar {
+         align-items: flex-start;
+         flex-direction: column;
+         gap: 18px;
+         margin-bottom: 25px;
+     }
+     .women-sort-summary {
+         width: 100%;
+         justify-content: space-between;
+     }
+     .women-product-grid {
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         gap: 22px 8px;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .women-collection {
+         padding: 24px 12px 35px;
+     }
+     .women-title {
+         margin-bottom: 28px;
+         font-size: 25px;
+     }
+     .women-toolbar {
+         gap: 14px;
+         margin-bottom: 20px;
+         font-size: 11px;
+     }
+     .women-filters {
+         gap: 8px;
+     }
+     .women-toolbar label {
+         gap: 4px;
+     }
+     .women-toolbar select {
+         max-width: 135px;
+         font-size: 11px;
+     }
+     .women-product-grid {
+         grid-template-columns: repeat(2, minmax(0, 1fr));
+         gap: 22px 8px;
+     }
+     .women-product-details {
+         padding-top: 7px;
+     }
+     .women-product-details h2 {
+         font-size: 12px;
+     }
+     .women-product-reviews {
+         gap: 4px;
+         font-size: 10px;
+     }
+     .women-stars {
+         font-size: 13px;
+     }
+     .women-product-price {
+         font-size: 11px;
+     }
+     .women-sold-out {
+         left: 5px;
+         bottom: 5px;
+         padding: 4px 7px;
+         font-size: 9px;
+     }
+ }

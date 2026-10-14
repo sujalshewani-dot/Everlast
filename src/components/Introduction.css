@@ -1,0 +1,51 @@
+.introduction-section {
+    width: 100%;
+    padding: 65px 8%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.introduction-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.introduction-content h2 {
+    margin: 0 auto 20px;
+    color: #000000;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+.introduction-description {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .introduction-section {
+        padding: 50px 6%;
+    }
+    .introduction-content h2 {
+        font-size: 28px;
+    }
+    .introduction-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .introduction-section {
+        padding: 40px 20px;
+    }
+    .introduction-content h2 {
+        font-size: 24px;
+    }
+}

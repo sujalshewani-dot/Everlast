@@ -1,0 +1,229 @@
+.premium-collection {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 42px 6.25% 50px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #111;
+}
+
+.premium-title {
+    margin: 0 0 90px;
+    font: 500 38px/1.2 Arial, Helvetica, sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.premium-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 55px;
+    font: 14px Arial, Helvetica, sans-serif;
+}
+
+.premium-filters,
+.premium-sort-summary {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.premium-filters label,
+.premium-sort-summary label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.premium-toolbar select {
+    max-width: 190px;
+    padding: 5px 20px 5px 4px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+    color: #333;
+    font: inherit;
+    cursor: pointer;
+}
+
+.premium-sort-summary>span {
+    color: #666;
+    white-space: nowrap;
+}
+
+.premium-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px 5px;
+}
+
+.premium-product-card {
+    display: block;
+    min-width: 0;
+    background: #fff;
+    color: inherit;
+    text-decoration: none;
+}
+
+.premium-product-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.premium-product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.25s ease;
+}
+
+.premium-product-card:hover .premium-product-image img {
+    transform: scale(1.02);
+}
+
+.premium-sold-out {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #292929;
+    color: #fff;
+    font-size: 11px;
+}
+
+.premium-product-details {
+    padding: 10px 4px 4px;
+}
+
+.premium-product-details h2 {
+    margin: 0 0 6px;
+    font: 400 14px/1.45 Arial, Helvetica, sans-serif;
+    overflow-wrap: anywhere;
+}
+
+.premium-product-reviews {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 7px;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+.premium-stars {
+    color: #000;
+    font-size: 15px;
+    letter-spacing: -1px;
+    white-space: nowrap;
+}
+
+.premium-no-stars {
+    color: #111;
+}
+
+.premium-product-price {
+    margin: 0;
+    font: 12px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.premium-no-products {
+    padding: 40px 0;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .premium-collection {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+    .premium-title {
+        margin-bottom: 65px;
+        font-size: 34px;
+    }
+    .premium-toolbar {
+        margin-bottom: 40px;
+    }
+    .premium-filters,
+    .premium-sort-summary {
+        gap: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .premium-collection {
+        padding: 30px 22px 40px;
+    }
+    .premium-title {
+        margin-bottom: 38px;
+        font-size: 30px;
+    }
+    .premium-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 25px;
+    }
+    .premium-sort-summary {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .premium-product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .premium-collection {
+        padding: 24px 12px 35px;
+    }
+    .premium-title {
+        margin-bottom: 28px;
+        font-size: 25px;
+    }
+    .premium-toolbar {
+        gap: 14px;
+        margin-bottom: 20px;
+        font-size: 11px;
+    }
+    .premium-filters {
+        gap: 8px;
+    }
+    .premium-filters label,
+    .premium-sort-summary label {
+        gap: 4px;
+    }
+    .premium-toolbar select {
+        max-width: 135px;
+        font-size: 11px;
+    }
+    .premium-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 8px;
+    }
+    .premium-product-details {
+        padding-top: 7px;
+    }
+    .premium-product-details h2 {
+        font-size: 12px;
+    }
+    .premium-product-reviews {
+        gap: 4px;
+        font-size: 10px;
+    }
+    .premium-stars {
+        font-size: 13px;
+    }
+    .premium-product-price {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,44 @@
+.hero-slider {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.hero-slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.hero-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .hero-slider {
+        height: 450px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .hero-slider {
+        height: 350px;
+    }
+}

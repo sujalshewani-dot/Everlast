@@ -1,0 +1,193 @@
+.most-seller-section {
+    width: 100%;
+    padding: 20px 0 40px;
+    background: #fff;
+    color: #111;
+}
+
+.most-seller-container {
+    width: calc(100% - 112px);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.talking-heading {
+    margin: 0 0 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.most-seller-heading {
+    margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.most-seller-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 5px;
+    row-gap: 20px;
+}
+
+.most-seller-card {
+    min-width: 0;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.most-seller-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.most-seller-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.most-seller-card:hover .most-seller-image img {
+    transform: scale(1.03);
+}
+
+.most-seller-badge {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 5px 11px;
+    border-radius: 15px;
+    background: #292d35;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.most-seller-details {
+    padding-top: 10px;
+}
+
+.most-seller-name {
+    min-height: 18px;
+    margin: 0 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.most-seller-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.most-seller-stars {
+    color: #000;
+    font-size: 17px;
+    letter-spacing: -2px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.most-seller-price {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.view-all-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.view-all-button {
+    min-width: 92px;
+    padding: 13px 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #050505;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.view-all-button:hover {
+    background: #333;
+}
+
+@media (min-width: 1600px) {
+    .most-seller-container {
+        width: calc(100% - 140px);
+    }
+}
+
+@media (max-width: 900px) {
+    .most-seller-container {
+        width: calc(100% - 50px);
+    }
+    .talking-heading {
+        font-size: 30px;
+    }
+    .most-seller-heading {
+        font-size: 25px;
+    }
+    .most-seller-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .most-seller-section {
+        padding: 25px 0 35px;
+    }
+    .most-seller-container {
+        width: calc(100% - 28px);
+    }
+    .talking-heading {
+        font-size: 24px;
+    }
+    .most-seller-heading {
+        font-size: 21px;
+        margin-bottom: 16px;
+    }
+    .most-seller-grid {
+        gap: 22px 10px;
+    }
+    .most-seller-name {
+        font-size: 11px;
+    }
+    .most-seller-reviews {
+        gap: 4px;
+        font-size: 10px;
+    }
+    .most-seller-stars {
+        font-size: 14px;
+    }
+    .most-seller-price {
+        font-size: 10px;
+    }
+}

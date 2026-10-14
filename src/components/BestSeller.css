@@ -1,0 +1,180 @@
+.top-seller-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 0 35px;
+}
+
+.top-seller-container {
+    width: calc(100% - 164px);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* TOP SELLER */
+
+.top-seller-heading {
+    margin: 0 0 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111111;
+}
+
+
+/* PRODUCT AREA */
+
+.top-seller-product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+
+
+/* LARGE IMAGE */
+
+.top-seller-main-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.top-seller-main-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* RIGHT PRODUCT AREA */
+
+.top-seller-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* SMALL PRODUCT IMAGE */
+
+.top-seller-product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.top-seller-product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* SOLD OUT */
+
+.sold-out {
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 18px;
+    padding: 4px 11px;
+    border-radius: 12px;
+    background: #292d35;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* PRODUCT NAME */
+
+.product-name {
+    margin: 0 0 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #111111;
+}
+
+
+/* REVIEWS */
+
+.product-reviews {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 7px;
+}
+
+.stars {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.review-count {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #111111;
+}
+
+
+/* PRICE */
+
+.product-price {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .top-seller-container {
+        width: calc(100% - 60px);
+    }
+    .top-seller-heading {
+        font-size: 27px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .top-seller-section {
+        padding: 25px 0 50px;
+    }
+    .top-seller-container {
+        width: calc(100% - 36px);
+    }
+    .top-seller-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .top-seller-product {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .top-seller-info {
+        justify-content: flex-start;
+    }
+}
